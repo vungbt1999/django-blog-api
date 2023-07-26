@@ -1,0 +1,11 @@
+django==4.2.3
+djangorestframework==3.14.0
+markdown
+django-filter
+djangorestframework-simplejwt==5.2.2
+python-dotenv
+mysqlclient==2.2.0
+requests==2.31.0
+django-cors-headers==4.2.0
+drf-nested-routers
+openpyxl
