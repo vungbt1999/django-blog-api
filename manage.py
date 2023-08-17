@@ -2,7 +2,11 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from django.core.management.commands.runserver import Command as runserver
+from dotenv import load_dotenv
+load_dotenv()
 
+runserver.default_port = os.getenv('PORT', 8001)
 
 def main():
     """Run administrative tasks."""

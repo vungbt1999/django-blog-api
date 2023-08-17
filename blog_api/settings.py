@@ -39,7 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'posts'
+    'posts',
+    'foods',
+    'categories',
+    'post_categories',
+    'user_activities',
+    'user_socials',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -84,7 +90,6 @@ DATABASES = {
         'PASSWORD': os.getenv('DB_PASS', 'root'),
         'HOST': os.getenv('DB_HOST', '127.0.0.1'),
         'PORT': os.getenv('DB_PORT', '3307'),
-        # 'CONN_MAX_AGE': int(os.getenv('CONN_MAX_AGE', '0'), ),
         'OPTIONS': {  
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
         }    
